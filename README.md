@@ -1,4 +1,4 @@
-# Separate Content
+# WP Separate Content
 
 WordPressの投稿本文を`<!--more-->`の前後で分割します。  
 Movable Typeの`MTEntryBody`, `MTEntryMore`相当の働きを実現します。
