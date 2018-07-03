@@ -8,7 +8,7 @@ Movable Typeの`MTEntryBody`, `MTEntryMore`相当の働きを実現します。
 ### moreより前を出力
 
 ```
-<?php SeparateContent::the_content_of_body(); ?>
+<?php WPSeparateContent::the_content_of_body(); ?>
 ```
 
 Movable Typeの`MTEntryBody`相当です。
@@ -16,7 +16,7 @@ Movable Typeの`MTEntryBody`相当です。
 ### moreより後を出力
 
 ```
-<?php SeparateContent::the_content_of_more(); ?>
+<?php WPSeparateContent::the_content_of_more(); ?>
 ```
 
 Movable Typeの`MTEntryMore`相当です。
