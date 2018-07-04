@@ -18,14 +18,14 @@ class WPSeparateContent {
 	}
 
 	private function separate_content( $content ) {
-		preg_match('/([\w\W]*)<!--more(.*?)?-->([\w\W]*)/', $content, $matches);
+		preg_match( '/([\w\W]*)<!--more(.*?)?-->([\w\W]*)/', $content, $matches );
 		return $matches;
 	}
 
 	public static function the_content_of_body() {
 		$post = get_post();
 		$content = $post->post_content;
-		$matches = WPSeparateContent::separate_content( $content );
+		$matches = self::separate_content( $content );
 
 		if ( $matches ) {
 			$content_of_body = $matches[1];
@@ -44,7 +44,7 @@ class WPSeparateContent {
 	public static function the_content_of_more() {
 		$post = get_post();
 		$content = $post->post_content;
-		$matches = WPSeparateContent::separate_content( $content );
+		$matches = self::separate_content( $content );
 
 		if ( $matches ) {
 			$content_of_more = $matches[3];
